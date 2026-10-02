@@ -1,0 +1,23 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#07131d;color:#eef7f2;line-height:1.6}
+header{background:linear-gradient(135deg,#07131d,#0d2929);padding-bottom:50px}
+.navbar{max-width:1100px;margin:auto;padding:20px;display:flex;align-items:center;gap:28px}
+.navbar h1{margin-right:auto;color:#54e38e}.navbar a{color:#dcebe4;text-decoration:none}
+.hero{max-width:1100px;margin:40px auto 0;padding:20px;display:flex;justify-content:space-between;align-items:center;gap:30px}
+.tag{color:#54e38e;font-weight:bold;letter-spacing:2px}
+h2{font-size:36px;margin:10px 0 20px}.hero h2 span{color:#54e38e}
+.hero p{color:#b8c9c2}.btn,button{display:inline-block;background:#54e38e;color:#06140d;border:0;border-radius:12px;padding:12px 20px;margin-top:20px;font-weight:bold;cursor:pointer;text-decoration:none}
+.hero-card{background:#123b34;border:1px solid #286454;border-radius:25px;padding:55px;text-align:center;font-size:34px;box-shadow:0 15px 40px #0005}
+.hero-card strong{font-size:25px}.hero-card small{font-size:14px;color:#b8c9c2}
+main{max-width:1100px;margin:auto;padding:35px 20px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-bottom:45px}
+.stats div,.days article,.diet-grid div,.tips{background:#0d202b;border:1px solid #1c3945;border-radius:18px;padding:20px}
+.stats b{display:block;font-size:30px;color:#54e38e}.stats span{color:#9fb3ac}
+.days{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.days article{transition:.2s}.days article:hover,.diet-grid div:hover{transform:translateY(-4px);border-color:#54e38e}
+.days h3{color:#54e38e}.days p{font-size:19px;font-weight:bold}.days span{font-size:13px;color:#9fb3ac}.days button{padding:8px 12px;margin-top:12px}.days button.done{background:#24443a;color:#9be9b8}
+section{margin-bottom:50px}
+.diet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.diet-grid b{color:#54e38e}.diet-grid p{color:#b8c9c2}
+.tips{list-style-position:inside;color:#c9d8d2}.tips li{margin:8px}
+footer{text-align:center;padding:25px;color:#80968e;border-top:1px solid #18313a}
+@media(max-width:800px){.hero{flex-direction:column;align-items:flex-start}.navbar a{display:none}.days{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){h2{font-size:29px}.stats,.days,.diet-grid{grid-template-columns:1fr}.hero-card{width:100%;padding:35px}.navbar{padding:15px}}
